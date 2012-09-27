@@ -1,4 +1,4 @@
-var webservice_url = "http://www.jumahe.com/lab/nannytime/webservice.php";
+var webservice_url = "http://url/to/webservice.php";
 
 var deviceId = "device";
 
