@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NannyTime</title>
+    <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css" />
+    <link rel="stylesheet" href="my.css" />
+    <script src="jquery.min.js"></script>
+    <script src="jquery.mobile-1.1.1.min.js"></script>
+    <script src="moment.min.js"></script>
+    <script src="my.js"></script>
+</head>
+
+<body>
+    <div data-role="page" data-theme="a" id="page1">
+        
+        <!-- HEADER -->
+        <div data-theme="a" data-role="header"><h3>NannyTime</h3></div>
+        
+        <!-- CONTENT -->
+        <div data-role="content" style="padding:15px">
+            
+            <!-- CURRENT HOUR -->
+            <div>
+                <p id="hour" style="text-align:center;" data-mce-style="text-align:center;">
+                    <span style="font-size:xx-large; font-family:terminal,monaco;"><b>23:59</b></span>
+                </p>
+            </div>
+            
+            <!-- MANUAL HOUR -->
+            <div data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-mini="true">
+                    <input id="manual_input" placeholder="" value="" type="time" />
+                </fieldset>
+            </div>
+            
+            <!-- MESSAGE -->
+            <div id="message">
+            	<p style="text-align:center;" data-mce-style="text-align:center;">xxx</p>
+            </div>
+            
+            <!-- CHECK IN/OUT BUTTONS -->
+            <a id="check_in" data-role="button" data-transition="none" data-theme="c" href="" data-icon="forward" data-iconpos="top">Check IN</a>
+            <a id="check_out" data-role="button" data-transition="none" data-theme="c" href="" data-icon="back" data-iconpos="top">Check OUT</a>
+            
+        </div>
+    </div>
+    
+	<script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript">
+        $(document).ready( function($){ init(); });
+    </script>
+</body>
+</html>
